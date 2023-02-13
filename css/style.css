@@ -64,6 +64,10 @@ h3, h4, h5:first-letter {
   background-image: url("/img/milad-fakurian-nY14Fs8pxT8-unsplash.jpg");
 }
 
+.project-section {
+  background-image: url("/img/richard-horvath-RAZU_R66vUc-unsplash.jpg");
+}
+
 .contact-section {
   background-image: url("/img/richard-horvath-_nWaeTF6qo0-unsplash.jpg");
 }
@@ -82,15 +86,20 @@ h3, h4, h5:first-letter {
   background-position: 5% 5%;
 }
 
-.name {
-  position: relative;
-  top: 40%;
-  padding-right: 50%;
-  line-height: 30%;
+.big-text {
+  position: absolute;
+  bottom: 0;
+  padding: 0 5% 0;
+  line-height: 10%;
   font-size: 18vh;
   letter-spacing: 1vh;
   font-family: 'Permanent Marker';
   text-align: right;
+}
+
+.big-text p {
+  margin: 5% 0 5%;
+  padding: 10% 0 10%;
 }
 
 .contact-text {
