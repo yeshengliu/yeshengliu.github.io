@@ -72,6 +72,10 @@ h3, h4, h5:first-letter {
   background-image: url("/img/richard-horvath-_nWaeTF6qo0-unsplash.jpg");
 }
 
+.hobby-section {
+  background-image: url("/img/richard-horvath-cPccYbPrF-A-unsplash.jpg");
+}
+
 .top-section-text {
   overflow: hidden;
   background: url("/img/pawel-czerwinski-ruJm3dBXCqw-unsplash.jpg");
@@ -175,4 +179,28 @@ h3, h4, h5:first-letter {
 
 .text-section-right p {
   padding-right: 2%;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1%;
+}
+
+.image-container-column {
+  flex: 30%;
+  max-width: 33%;
+  padding: 0 1%;
+}
+
+.image-container-column img {
+  margin-top: 5%;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 2%;
+  transition: width 0.2s ease-in;
+}
+
+.image-container-column img:hover {
+  width: 102%;
 }
