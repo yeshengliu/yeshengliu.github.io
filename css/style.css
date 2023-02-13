@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  height: 101%;
 }
 
 body {
@@ -17,12 +18,12 @@ h3, h4, h5:first-letter {
 .navbar {
   overflow: hidden;
   position: fixed;
-  top: 0px;
+  top: 0;
   width: 100vw;
-  font-size: 120%;
+  font-size: 1rem;
   line-height: 3;
   background-color: black;
-  z-index: 999;
+  z-index: 99;
 }
 
 .navbar-links {
@@ -95,7 +96,7 @@ h3, h4, h5:first-letter {
   bottom: 0;
   padding: 0 5% 0;
   line-height: 10%;
-  font-size: 18vh;
+  font-size: 8rem;
   letter-spacing: 1vh;
   font-family: 'Permanent Marker';
   text-align: right;
@@ -203,4 +204,43 @@ h3, h4, h5:first-letter {
 
 .image-container-column img:hover {
   width: 102%;
+}
+
+@media screen and (max-width: 1300px) {
+  .image-container-column {
+    flex: 40%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    font-size: 0.65rem
+  }
+
+  .big-text {
+    font-size: 16vw;
+  }
+
+  .contact-text {
+    font-size: 100%;
+    white-space: normal;
+  }
+
+  .text-section-left {
+    text-align: center;
+  }
+
+  .text-section-right {
+    text-align: center;
+  }
+
+  .text-container {
+    grid-template-columns: 1fr;
+  }
+
+  .image-container-column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
