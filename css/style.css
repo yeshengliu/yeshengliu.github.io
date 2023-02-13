@@ -10,6 +10,10 @@ body {
   background-color: #2b2b2b;
 }
 
+h3, h4, h5:first-letter {
+  text-transform: capitalize;
+}
+
 .navbar {
   overflow: hidden;
   position: fixed;
@@ -91,10 +95,11 @@ body {
 
 .contact-text {
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 0;
-  padding: 2%;
+  padding: 3%;
   font-size: 150%;
+  white-space: nowrap;
 }
 
 .contact-url {
@@ -103,10 +108,30 @@ body {
 
 .text-section {
   text-align: center;
-  min-height: 100vh;
-  margin: 0 30% 0 30%;
+  min-height: 80vh;
+  margin: 0 10% 0 10%;
   padding-top: 5%;
   font-family: 'Courier New', Courier, monospace;
+}
+
+.text-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10%;
+  row-gap: 5%;
+  color: lightgray;
+}
+
+.text-container div {
+  transition: color .2s ease-in;
+}
+
+.text-container div:hover {
+  color: white;
+}
+
+.text-container div {
+  padding: 0 0 0 10%;
 }
 
 .text-section h3 {
@@ -115,6 +140,16 @@ body {
 
 .text-section h4 {
   font-size: 150%;
+  margin: 5% 0 0;
+}
+
+.text-section h5 {
+  font-size: 100%;
+  margin: 3% 0 0;
+}
+
+.text-section p {
+  margin: 2% 0 0;
 }
 
 .text-section-left {
@@ -122,7 +157,7 @@ body {
 }
 
 .text-section-left p {
-  padding-left: 5%;
+  padding-left: 2%;
 }
 
 .text-section-right {
@@ -130,5 +165,5 @@ body {
 }
 
 .text-section-right p {
-  padding-right: 5%;
+  padding-right: 2%;
 }
