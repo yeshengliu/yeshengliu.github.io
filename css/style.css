@@ -41,6 +41,10 @@ h3, h4, h5:first-letter {
   padding: 5%;
 }
 
+.navbar-links .active-tab {
+  text-decoration: underline;
+}
+
 .navbar-links a {
   color: lightgray;
   text-transform: uppercase;
